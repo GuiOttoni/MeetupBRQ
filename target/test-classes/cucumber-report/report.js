@@ -1,0 +1,66 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("teste1.feature");
+formatter.feature({
+  "line": 2,
+  "name": "Escreva algo que descreva essa funcionalidade",
+  "description": "",
+  "id": "escreva-algo-que-descreva-essa-funcionalidade",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@TagFuncionalidade"
+    }
+  ]
+});
+formatter.scenario({
+  "line": 5,
+  "name": "Cen�rio 1",
+  "description": "",
+  "id": "escreva-algo-que-descreva-essa-funcionalidade;cen�rio-1",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@tagCenario"
+    }
+  ]
+});
+formatter.step({
+  "line": 6,
+  "name": "Passo 1",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "Passo 2",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "Passo 3",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Test.passo1()"
+});
+formatter.result({
+  "duration": 64959803270,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Test.passo2()"
+});
+formatter.result({
+  "duration": 4003656199,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Test.passo3()"
+});
+formatter.result({
+  "duration": 2965250558,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: Element \u003cinput value\u003d\"Pesquisa Google\" aria-label\u003d\"Pesquisa Google\" name\u003d\"btnK\" type\u003d\"submit\" jsaction\u003d\"sf.chk\"\u003e is not clickable at point (727, 411). Other element would receive the click: \u003cdiv class\u003d\"sbqs_c\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d67.0.3396.99)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027DTBV022283\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002710.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir\u003dC:\\Users\\PAULOL~1\\AppData\\Local\\Temp\\scoped_dir1424_248}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d67.0.3396.99, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 7f32d8c50bb8305ef1bcf303895f34bd\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat br.com.basepages.BasePageJava.clicar(BasePageJava.java:122)\r\n\tat br.com.test.Test.passo3(Test.java:28)\r\n\tat ✽.Then Passo 3(teste1.feature:8)\r\n",
+  "status": "failed"
+});
+});

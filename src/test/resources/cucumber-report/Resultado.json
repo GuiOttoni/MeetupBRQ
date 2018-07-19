@@ -1,0 +1,58 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Cen�rio 1",
+        "description": "",
+        "id": "escreva-algo-que-descreva-essa-funcionalidade;cen�rio-1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28586641127,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Passo 1",
+            "match": {
+              "location": "Test.passo1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1641754689,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Passo 2",
+            "match": {
+              "location": "Test.passo2()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tagCenario"
+          }
+        ]
+      }
+    ],
+    "name": "Escreva algo que descreva essa funcionalidade",
+    "description": "",
+    "id": "escreva-algo-que-descreva-essa-funcionalidade",
+    "keyword": "Feature",
+    "uri": "teste1.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@TagFuncionalidade"
+      }
+    ]
+  }
+]
